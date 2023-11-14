@@ -192,17 +192,14 @@
 
                         <div class="col-lg-6 col-12">
                             <div class="section-bg-image-block">
-                                <h2 class="mb-lg-3">Get our newsletter</h2>
+                                <h2 class="mb-lg-3">Productos</h2>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
+                                <p>Garrafones</p>
 
-                                <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
+                                <form action="productos.html" method="get" class="custom-form mt-lg-4 mt-2" role="form">
                                     <div class="input-group input-group-lg">
-                                        <span class="input-group-text bi-envelope" id="basic-addon1"></span>
-
-                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
-
-                                        <button type="submit" class="form-control">Subscribe</button>
+                                       
+                                        <button type="submit" class="form-control" hr>Subscribe</button>
                                     </div>
                                 </form>
                             </div>
@@ -246,7 +243,7 @@
                                             <label for="floatingTextarea">Mensaje</label>
                                         </div>
 
-                                        <button type="submit" class="form-control">Enviar</button>
+                                        <button type="submit" class="form-control" <link rel="stylesheet" href="url"/>>Enviar</button>
                                     </div>
                                 </div>
                             </form>
@@ -287,12 +284,12 @@
 
                         <p class="d-flex border-bottom pb-3 mb-3 me-lg-3">
                             <span>Lun-Vier</span>
-                            9:00 AM - 8:00 PM
+                            8:00 AM - 8:00 PM
                         </p>
 
                         <p class="d-flex me-lg-3">
                             <span>Sab-Dom</span>
-                            9:30 AM - 2:30 PM
+                            8:30 AM - 2:30 PM
                         </p>
                         <br>
                         <p class="copyright-text">Copyright © 2023 Equipo 3</p>
