@@ -15,25 +15,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-        <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
 
-  
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet"type="text/css"/>
+        <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/css/templatemo-tiya-golf-club.css" rel="stylesheet">
+
+
     </head>
 
     <body>
-        <!-- ***** Preloader Start ***** -->
-        <div id="preloader">
-            <div class="jumper">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <!-- ***** Preloader End ***** -->
+
         <main>
 
             <nav class="navbar navbar-expand-lg">                
