@@ -1,3 +1,5 @@
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,32 +7,38 @@
 	<title></title> 
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="assets/css/estilos.css">
+        
+        
 	
 
 </head>  
 <body>
-    <form class="formulario">
+ <form class="formulario" action="nuevousuario" method="post">
     
-    <h1>Login</h1>
+    <h1>Registrate</h1>
      <div class="contenedor">
      
-     
+     <div class="input-contenedor">
+         <i class="fas fa-user icon"></i>
+         <input type="text" name="usuario" placeholder="Nombre De Usuario">
+         
+         </div>
          
          <div class="input-contenedor">
          <i class="fas fa-envelope icon"></i>
-         <input type="text" placeholder="Correo Electronico">
+         <input type="text" name="correo" placeholder="Correo Electronico">
          
          </div>
          
          <div class="input-contenedor">
         <i class="fas fa-key icon"></i>
-         <input type="password" placeholder="Contraseña">
+         <input type="password" name="pass" placeholder="Contraseña">
          
          </div>
-         <input type="submit" value="Login" class="button">
+         <input type="submit" value="Registrate" class="button">
          <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-         <p>¿No tienes una cuenta? <a class="link" href="registrarvista.html">Registrate </a></p>
+         <p>¿Ya tienes una cuenta?<a class="link" href="index.jsp">Iniciar Sesion</a></p>
      </div>
     </form>
 </body>

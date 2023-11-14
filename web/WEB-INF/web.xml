@@ -8,6 +8,10 @@
         <servlet-name>AddCart</servlet-name>
         <servlet-class>servlet.AddCart</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RegistrarUsuarios</servlet-name>
+        <servlet-class>servlet.RegistrarUsuarios</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>InicioSesion</servlet-name>
         <url-pattern>/iniciar</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>AddCart</servlet-name>
         <url-pattern>/agregarproducto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistrarUsuarios</servlet-name>
+        <url-pattern>/nuevousuario</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

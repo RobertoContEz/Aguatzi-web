@@ -9,16 +9,17 @@ import controlador.Consultas;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author rc0nt
  */
-public class InicioSesion extends HttpServlet {
+@WebServlet(name = "RegistrarUsuarios", urlPatterns = {"/nuevousuario"})
+public class RegistrarUsuarios extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,14 +35,13 @@ public class InicioSesion extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         
+        // Variables
         String usuario = request.getParameter("usuario");
+        String correo = request.getParameter("correo");
         String clave = request.getParameter("pass");
         
         Consultas sql = new Consultas();
-        
-        if(sql.autenticacion(usuario, clave)==1) {
-            HttpSession objSesion = request.getSession(true);
-            objSesion.setAttribute("usuario", usuario);
+        if(sql.registrarUsuario(usuario, correo, clave)) {
             response.sendRedirect("productos.jsp");
         } else {
             response.sendRedirect("index.jsp");

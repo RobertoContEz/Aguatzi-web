@@ -3,11 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/chaly/Documents/Aguatzi-web/web/index.jsp</file>
-            <file>file:/C:/Users/chaly/Documents/Aguatzi-web/controlador/Conexion.java</file>
-            <file>file:/C:/Users/chaly/Documents/Aguatzi-web/web/home.html</file>
-            <file>file:/C:/Users/chaly/Documents/Aguatzi-web/web/assets/js/botones.js</file>
-            <file>file:/C:/Users/chaly/Documents/Aguatzi-web/web/vendor/bootstrap/css/bootstrap.min.css</file>
+            <file>file:/C:/Users/rc0nt/Documents/NetBeansProjects/appweb/Aguatzi/Aguatzi/web/home.html</file>
+            <file>file:/C:/Users/rc0nt/Documents/NetBeansProjects/appweb/Aguatzi/Aguatzi/web/home.jsp</file>
+            <file>file:/C:/Users/rc0nt/Documents/NetBeansProjects/appweb/Aguatzi/Aguatzi/web/assets/css/bootstrap.min.css</file>
+            <file>file:/C:/Users/rc0nt/Documents/NetBeansProjects/appweb/Aguatzi/Aguatzi/web/loginvista.html</file>
+            <file>file:/C:/Users/rc0nt/Documents/NetBeansProjects/appweb/Aguatzi/Aguatzi/web/index.jsp</file>
+            <file>file:/C:/Users/rc0nt/Documents/NetBeansProjects/appweb/Aguatzi/Aguatzi/src/java/servlet/AddCart.java</file>
+            <file>file:/C:/Users/rc0nt/Documents/NetBeansProjects/appweb/Aguatzi/Aguatzi/web/assets/css/templatemo-tiya-golf-club.css</file>
         </group>
     </open-files>
 </project-private>

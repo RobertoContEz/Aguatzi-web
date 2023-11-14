@@ -14,20 +14,21 @@ public class Consultas {
     public Consultas() {
     }
 
-     public int autenticacion(String correo, String clave) {
+     public int autenticacion(String nombre, String clave) {
         PreparedStatement pst = null;
         ResultSet rs = null;
         try {
-            String consulta = "select tipo from usuarios where correo=? and pass=?";
+            String consulta = "select tipo from usuarios where nombre=? and pass=?";
             System.out.println("Consulta es " + consulta);
             pst = con.getConexion().prepareStatement(consulta);
-            pst.setString(1, correo);
+            pst.setString(1, nombre);
             pst.setString(2, clave);
             rs = pst.executeQuery();
 
             if (rs.next()) {
                 String tipo = rs.getString("tipo");
                 if (tipo.equals("usuario")) {
+                    System.out.println("Usuario "+nombre+" autenticado.");
                     return 1;
                 } else {
                     return 2;
@@ -55,15 +56,16 @@ public class Consultas {
 
     }
     
-       public boolean registrarUsuario(String usuario, String pass) {
+       public boolean registrarUsuario(String usuario, String correo, String pass) {
         PreparedStatement pst = null;
         
         try {
-            String consulta = "insert into usuarios (nombre, pass) values(?,?)";
+            String consulta = "insert into usuarios (nombre, pass, correo, telefono, tipo) values(?,?,?,'N/A','usuario')";
             System.out.println("Consulta es;" + consulta);
             pst = con.getConexion().prepareStatement(consulta);
             pst.setString(1, usuario);
             pst.setString(2, pass);
+            pst.setString(3, correo);
             if(pst.executeUpdate()==1){
                 return true;
             }

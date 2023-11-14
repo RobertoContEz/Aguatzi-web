@@ -30,7 +30,7 @@
             <div id="sticky-wrapper" class="sticky-wrapper" style="height: 88px;"><nav class="navbar navbar-expand-lg" style="width: 1857px;">                
                 <div class="container">
                     <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="assets/img/logo - copia.png" class="navbar-brand-image img-fluid" alt="Tiya Golf Club" width="48px" height="40px">
+                        <img src="assets/img/logo - copia.png" class="navbar-brand-image img-fluid" alt="logo" width="40px" height="40px">
                         <span class="navbar-brand-text">
                             Aguatzi
                             <small>Purificadora</small>
@@ -51,16 +51,6 @@
                                 <a class="nav-link click-scroll active" href="#section_1">Inicio</a>
                             </li>
                             
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle inactive" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="event-listing.html">Garrafones</a></li>
-
-                                    <li><a class="dropdown-item" href="event-detail.html">Accesorios</a></li>
-                                </ul>
-                            </li>
-    
                             <li class="nav-item">
                                 <a class="nav-link click-scroll inactive" href="#section_2">Nosotros</a>
                             </li>
@@ -68,6 +58,11 @@
                             <li class="nav-item">
                                 <a class="nav-link click-scroll inactive" href="#section_3">Contáctanos</a>
                             </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll active" href="productos.jsp">Productos</a>
+                            </li>
+    
                         </ul>
 
                         <div class="d-none d-lg-block ms-lg-3">
@@ -86,35 +81,27 @@
                 </div>
                 
                <div class="offcanvas-body d-flex flex-column">
-                    <form class="custom-form member-login-form" action="#" method="post" role="form">
+                    <form class="custom-form member-login-form" action="iniciar" method="post" role="form">
 
                         <div class="member-login-form-body">
                             <div class="mb-4">
-                                <label class="form-label mb-2" for="member-login-number">Nombre de usuario.</label>
+                                <label class="form-label mb-2" for="usuario">Nombre de usuario.</label>
 
-                                <input type="text" name="member-login-number" id="member-login-number" class="form-control" placeholder="Nombre" required>
+                                <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Nombre" required>
                             </div>
 
                             <div class="mb-4">
-                                <label class="form-label mb-2" for="member-login-password">Contraseña</label>
+                                <label class="form-label mb-2" for="pass">Contraseña</label>
 
-                                <input type="password" name="member-login-password" id="member-login-password" pattern="[0-9a-zA-Z]{4,10}" class="form-control" placeholder="Contraseña" required="">
+                                <input type="password" name="pass" id="pass" pattern="[0-9a-zA-Z]{4,10}" class="form-control" placeholder="Contraseña" required="">
                             </div>
-
-                            <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                              
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Recordarme
-                                </label>
-                            </div>
-
+                            
                             <div class="col-lg-5 col-md-7 col-8 mx-auto">
                                 <button type="submit" class="form-control">Entrar</button>
                             </div>
 
                             <div class="text-center my-4">
-                                <a href="registrarvista.html">Haga click para registrase</a>
+                                <a href="registrar.jsp">Haga click para registrase</a>
                             </div>
                         </div>
                     </form>
@@ -196,10 +183,10 @@
 
                                 <p>Garrafones</p>
 
-                                <form action="productos.html" method="get" class="custom-form mt-lg-4 mt-2" role="form">
+                                <form action="productos.jsp" method="get" class="custom-form mt-lg-4 mt-2" role="form">
                                     <div class="input-group input-group-lg">
                                        
-                                        <button type="submit" class="form-control" hr>Subscribe</button>
+                                        <button type="submit" class="form-control" hr>Comprar</button>
                                     </div>
                                 </form>
                             </div>
