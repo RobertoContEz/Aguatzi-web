@@ -1,38 +1,39 @@
-<!doctype html>
-<html lang="en">
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
+        <link rel="icon" href="assets/img/logo - copia.png" type="image/x-icon">
 
-        <title>Tiya Golf Club - Free HTML CSS Template</title>
+        <title>Aguatzi</title>
 
         <!-- CSS FILES -->                
         <link rel="preconnect" href="https://fonts.googleapis.com">
-
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         
-<!--
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
 
-TemplateMo 587 Tiya Golf Club
-
-https://templatemo.com/tm-587-tiya-golf-club
-
--->
+  
     </head>
-    
-    <body>
 
+    <body>
+        <!-- ***** Preloader Start ***** -->
+        <div id="preloader">
+            <div class="jumper">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- ***** Preloader End ***** -->
         <main>
 
             <nav class="navbar navbar-expand-lg">                
@@ -48,17 +49,17 @@ https://templatemo.com/tm-587-tiya-golf-club
                     <div class="d-lg-none ms-auto me-3">
                         <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Member Login</a>
                     </div>
-    
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-    
+
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-lg-auto">
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="#section_1">Home</a>
                             </li>
-    
+
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="#section_2">About</a>
                             </li>
@@ -96,10 +97,10 @@ https://templatemo.com/tm-587-tiya-golf-club
             <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">                
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Member Login</h5>
-                    
+
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                
+
                 <div class="offcanvas-body d-flex flex-column">
                     <form class="custom-form member-login-form" action="#" method="post" role="form">
 
@@ -118,7 +119,7 @@ https://templatemo.com/tm-587-tiya-golf-club
 
                             <div class="form-check mb-4">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                              
+
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Remember me
                                 </label>
@@ -139,7 +140,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                             <strong class="text-white me-3">Any Questions?</strong>
 
                             <a href="tel: 010-020-0340" class="contact-link">
-                            	010-020-0340
+                                010-020-0340
                             </a>
                         </p>
                     </div>
@@ -147,7 +148,7 @@ https://templatemo.com/tm-587-tiya-golf-club
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
             </div>
-            
+
 
             <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
 
@@ -305,11 +306,11 @@ https://templatemo.com/tm-587-tiya-golf-club
                                     <thead>
                                         <tr>
                                             <th style="width: 34%;">Yearly Access</th>
-                                            
+
                                             <th style="width: 22%;">T1 $420</th>
-                                            
+
                                             <th style="width: 22%;">T2 $640</th>
-                                            
+
                                             <th style="width: 22%;">T3 $860</th>
                                         </tr>
                                     </thead>
@@ -317,15 +318,15 @@ https://templatemo.com/tm-587-tiya-golf-club
                                     <tbody>
                                         <tr>
                                             <th scope="row" class="text-start">Golf Insurance</th>
-                                            
+
                                             <td>
                                                 <i class="bi-check-circle-fill"></i>
                                             </td>
-                                            
+
                                             <td>
                                                 <i class="bi-check-circle-fill"></i>
                                             </td>
-                                            
+
                                             <td>
                                                 <i class="bi-check-circle-fill"></i>
                                             </td>
@@ -394,7 +395,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                                                 <i class="bi-check-circle-fill"></i>
                                             </td>
                                         </tr>
-                                        
+
                                         <tr>
                                             <th scope="row" class="text-start">Pro's Networking</th>
 
@@ -410,41 +411,41 @@ https://templatemo.com/tm-587-tiya-golf-club
                                                 <i class="bi-check-circle-fill"></i>
                                             </td>
                                         </tr>
-                                        
+
                                     </tbody>
                                 </table>
                             </div>
                         </div>
 
                         <div class="col-lg-5 col-12 mx-auto">
-                        <h4 class="mb-4 pb-lg-2">Please join us!</h4>
+                            <h4 class="mb-4 pb-lg-2">Please join us!</h4>
                             <form action="#" method="post" class="custom-form membership-form shadow-lg" role="form">
                                 <h4 class="text-white mb-4">Become a member</h4>
 
-                                    <div class="form-floating">
-                                        <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="">
-                                        
-                                        <label for="floatingInput">Full Name</label>
-                                    </div>
+                                <div class="form-floating">
+                                    <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="">
 
-                                    <div class="form-floating">
-                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
-                                        
-                                        <label for="floatingInput">Email address</label>
-                                    </div>
-
-                                    <div class="form-floating">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Describe message here"></textarea>
-                                        
-                                        <label for="floatingTextarea"> Comments</label>
-                                    </div>
-
-                                    <button type="submit" class="form-control">Submit</button>
+                                    <label for="floatingInput">Full Name</label>
                                 </div>
-                            </form>
-                        </div>
 
+                                <div class="form-floating">
+                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
+
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Describe message here"></textarea>
+
+                                    <label for="floatingTextarea"> Comments</label>
+                                </div>
+
+                                <button type="submit" class="form-control">Submit</button>
+                        </div>
+                        </form>
                     </div>
+
+                </div>
                 </div>
             </section>
 
@@ -461,7 +462,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                             <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
                                 <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
                                     <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">24</h6>
-                                    
+
                                     <strong class="text-white">Feb 2048</strong>
                                 </div>
                             </div>
@@ -510,7 +511,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                             <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
                                 <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
                                     <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">28</h6>
-                                    
+
                                     <strong class="text-white">Feb 2048</strong>
                                 </div>
                             </div>
@@ -572,7 +573,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                                     <div class="col-lg-6 col-md-6 col-12">
                                         <div class="form-floating">
                                             <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="">
-                                            
+
                                             <label for="floatingInput">Full Name</label>
                                         </div>
                                     </div>
@@ -580,7 +581,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                                     <div class="col-lg-6 col-md-6 col-12"> 
                                         <div class="form-floating">
                                             <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
-                                            
+
                                             <label for="floatingInput">Email address</label>
                                         </div>
                                     </div>
@@ -588,7 +589,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                                     <div class="col-lg-12 col-12">
                                         <div class="form-floating">
                                             <textarea class="form-control" id="message" name="message" placeholder="Describe message here"></textarea>
-                                            
+
                                             <label for="floatingTextarea">Message</label>
                                         </div>
 
@@ -659,26 +660,26 @@ https://templatemo.com/tm-587-tiya-golf-club
                             6:30 AM - 8:30 PM
                         </p>
                         <br>
-                        <p class="copyright-text">Copyright © 2048 Tiya Golf Club</p>
+                        <p class="copyright-text">Copyright Â© 2048 Tiya Golf Club</p>
                     </div>
 
-                        <div class="col-lg-2 col-12 ms-auto">
-                            <ul class="social-icon mt-lg-5 mt-3 mb-4">
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-instagram"></a>
-                                </li>
+                    <div class="col-lg-2 col-12 ms-auto">
+                        <ul class="social-icon mt-lg-5 mt-3 mb-4">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
 
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-twitter"></a>
-                                </li>
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
 
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
-                                </li>
-                            </ul>
-                            <p class="copyright-text">Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-                            
-                        </div>
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-whatsapp"></a>
+                            </li>
+                        </ul>
+                        <p class="copyright-text">Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+
+                    </div>
 
                 </div>
             </div>
