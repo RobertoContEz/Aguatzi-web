@@ -431,11 +431,13 @@ strong {
 }
 
 .sticky-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
 }
+
+
 
 .sticky-wrapper.is-sticky .navbar {
   background-color: rgb(61 64 91);

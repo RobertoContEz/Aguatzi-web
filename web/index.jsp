@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,53 +23,52 @@
 
 
     </head>
-
-    <body>
+<body>
 
         <main>
 
-            <nav class="navbar navbar-expand-lg">                
+            <div id="sticky-wrapper" class="sticky-wrapper" style="height: 88px;"><nav class="navbar navbar-expand-lg" style="width: 1857px;">                
                 <div class="container">
                     <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="Tiya Golf Club">
+                        <img src="assets/img/logo - copia.png" class="navbar-brand-image img-fluid" alt="Tiya Golf Club" width="48px" height="40px">
                         <span class="navbar-brand-text">
-                            Tiya
-                            <small>Golf Club</small>
+                            Aguatzi
+                            <small>Purificadora</small>
                         </span>
                     </a>
 
                     <div class="d-lg-none ms-auto me-3">
-                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Member Login</a>
+                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Iniciar Sesión</a>
                     </div>
-
+    
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
+    
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-lg-auto">
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                                <a class="nav-link click-scroll active" href="#section_1">Inicio</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll inactive" href="#section_2">Sobre nosotros</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_2">About</a>
+                                <a class="nav-link click-scroll inactive" href="#section_3">Membership</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_3">Membership</a>
+                                <a class="nav-link click-scroll inactive" href="#section_4">Events</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_4">Events</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_5">Contact Us</a>
+                                <a class="nav-link click-scroll inactive" href="#section_5">Contact Us</a>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                <a class="nav-link dropdown-toggle inactive" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
 
                                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
                                     <li><a class="dropdown-item" href="event-listing.html">Event Listing</a></li>
@@ -84,15 +83,15 @@
                         </div>
                     </div>
                 </div>
-            </nav>
+            </nav></div>
 
             <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">                
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Member Login</h5>
-
+                    
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-
+                
                 <div class="offcanvas-body d-flex flex-column">
                     <form class="custom-form member-login-form" action="#" method="post" role="form">
 
@@ -100,7 +99,7 @@
                             <div class="mb-4">
                                 <label class="form-label mb-2" for="member-login-number">Membership No.</label>
 
-                                <input type="text" name="member-login-number" id="member-login-number" class="form-control" placeholder="11002560" required>
+                                <input type="text" name="member-login-number" id="member-login-number" class="form-control" placeholder="11002560" required="">
                             </div>
 
                             <div class="mb-4">
@@ -111,7 +110,7 @@
 
                             <div class="form-check mb-4">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-
+                              
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Remember me
                                 </label>
@@ -132,7 +131,7 @@
                             <strong class="text-white me-3">Any Questions?</strong>
 
                             <a href="tel: 010-020-0340" class="contact-link">
-                                010-020-0340
+                            	010-020-0340
                             </a>
                         </p>
                     </div>
@@ -140,7 +139,7 @@
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
             </div>
-
+            
 
             <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
 
@@ -156,10 +155,10 @@
 
                             <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
                                 <span>Tiya is</span>
-                                <span class="cd-words-wrapper">
-                                    <b class="is-visible">Modern</b>
-                                    <b>Creative</b>
-                                    <b>Lifestyle</b>
+                                <span class="cd-words-wrapper" style="width: 137px;">
+                                    <b class="is-hidden">Modern</b>
+                                    <b class="is-visible">Creative</b>
+                                    <b class="is-hidden">Lifestyle</b>
                                 </span>
                             </h1>
 
@@ -172,7 +171,7 @@
 
                         <div class="col-lg-6 col-12">
                             <div class="ratio ratio-16x9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MGNgbNGOzh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MGNgbNGOzh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
                             </div>
                         </div>
 
@@ -298,11 +297,11 @@
                                     <thead>
                                         <tr>
                                             <th style="width: 34%;">Yearly Access</th>
-
+                                            
                                             <th style="width: 22%;">T1 $420</th>
-
+                                            
                                             <th style="width: 22%;">T2 $640</th>
-
+                                            
                                             <th style="width: 22%;">T3 $860</th>
                                         </tr>
                                     </thead>
@@ -310,15 +309,15 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row" class="text-start">Golf Insurance</th>
-
+                                            
                                             <td>
                                                 <i class="bi-check-circle-fill"></i>
                                             </td>
-
+                                            
                                             <td>
                                                 <i class="bi-check-circle-fill"></i>
                                             </td>
-
+                                            
                                             <td>
                                                 <i class="bi-check-circle-fill"></i>
                                             </td>
@@ -387,7 +386,7 @@
                                                 <i class="bi-check-circle-fill"></i>
                                             </td>
                                         </tr>
-
+                                        
                                         <tr>
                                             <th scope="row" class="text-start">Pro's Networking</th>
 
@@ -403,42 +402,42 @@
                                                 <i class="bi-check-circle-fill"></i>
                                             </td>
                                         </tr>
-
+                                        
                                     </tbody>
                                 </table>
                             </div>
                         </div>
 
                         <div class="col-lg-5 col-12 mx-auto">
-                            <h4 class="mb-4 pb-lg-2">Please join us!</h4>
+                        <h4 class="mb-4 pb-lg-2">Please join us!</h4>
                             <form action="#" method="post" class="custom-form membership-form shadow-lg" role="form">
                                 <h4 class="text-white mb-4">Become a member</h4>
 
-                                <div class="form-floating">
-                                    <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="">
+                                    <div class="form-floating">
+                                        <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="">
+                                        
+                                        <label for="floatingInput">Full Name</label>
+                                    </div>
 
-                                    <label for="floatingInput">Full Name</label>
-                                </div>
+                                    <div class="form-floating">
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
+                                        
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
 
-                                <div class="form-floating">
-                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Describe message here"></textarea>
+                                        
+                                        <label for="floatingTextarea"> Comments</label>
+                                    </div>
 
-                                    <label for="floatingInput">Email address</label>
-                                </div>
-
-                                <div class="form-floating">
-                                    <textarea class="form-control" id="message" name="message" placeholder="Describe message here"></textarea>
-
-                                    <label for="floatingTextarea"> Comments</label>
-                                </div>
-
-                                <button type="submit" class="form-control">Submit</button>
+                                    <button type="submit" class="form-control">Submit</button>
+                                </form></div>
+                            
                         </div>
-                        </form>
-                    </div>
 
-                </div>
-                </div>
+                    </div>
+                
             </section>
 
 
@@ -454,7 +453,7 @@
                             <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
                                 <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
                                     <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">24</h6>
-
+                                    
                                     <strong class="text-white">Feb 2048</strong>
                                 </div>
                             </div>
@@ -503,7 +502,7 @@
                             <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
                                 <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
                                     <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">28</h6>
-
+                                    
                                     <strong class="text-white">Feb 2048</strong>
                                 </div>
                             </div>
@@ -565,7 +564,7 @@
                                     <div class="col-lg-6 col-md-6 col-12">
                                         <div class="form-floating">
                                             <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="">
-
+                                            
                                             <label for="floatingInput">Full Name</label>
                                         </div>
                                     </div>
@@ -573,7 +572,7 @@
                                     <div class="col-lg-6 col-md-6 col-12"> 
                                         <div class="form-floating">
                                             <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
-
+                                            
                                             <label for="floatingInput">Email address</label>
                                         </div>
                                     </div>
@@ -581,7 +580,7 @@
                                     <div class="col-lg-12 col-12">
                                         <div class="form-floating">
                                             <textarea class="form-control" id="message" name="message" placeholder="Describe message here"></textarea>
-
+                                            
                                             <label for="floatingTextarea">Message</label>
                                         </div>
 
@@ -655,23 +654,23 @@
                         <p class="copyright-text">Copyright © 2048 Tiya Golf Club</p>
                     </div>
 
-                    <div class="col-lg-2 col-12 ms-auto">
-                        <ul class="social-icon mt-lg-5 mt-3 mb-4">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-instagram"></a>
-                            </li>
+                        <div class="col-lg-2 col-12 ms-auto">
+                            <ul class="social-icon mt-lg-5 mt-3 mb-4">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-instagram"></a>
+                                </li>
 
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-twitter"></a>
-                            </li>
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-twitter"></a>
+                                </li>
 
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-whatsapp"></a>
-                            </li>
-                        </ul>
-                        <p class="copyright-text">Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-
-                    </div>
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                </li>
+                            </ul>
+                            <p class="copyright-text">Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+                            
+                        </div>
 
                 </div>
             </div>
@@ -689,5 +688,6 @@
         <script src="js/modernizr.js"></script>
         <script src="js/custom.js"></script>
 
-    </body>
+    
+</body>
 </html>
