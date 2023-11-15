@@ -52,7 +52,7 @@ public class Producto {
     public double getPrecio() {
         return precio;
     }
-
+// Hola, este es un comentario random porque si
     public String getTipo() {
         return tipo;
     }
