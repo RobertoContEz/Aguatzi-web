@@ -6,7 +6,7 @@
 package servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+
 import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -33,30 +33,54 @@ public class AddCart extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        int cantidad = Integer.parseInt(request.getParameter("cantidad"));
-        int idproducto = Integer.parseInt(request.getParameter("idproducto"));
-        
-        HttpSession sesion = request.getSession(true);
-        ArrayList<Articulo> articulos = sesion.getAttribute("carrito") == null ? 
-                new ArrayList<>() : 
-                (ArrayList) sesion.getAttribute("carrito");
-        
-        boolean flag = false;
-        if (articulos.size() > 0) {
-            for(Articulo a : articulos) {
-                if(idproducto == a.getIdProducto()) {
-                    a.setCantidad(a.getCantidad()+cantidad);
-                    flag = true;
+
+        try {
+            // Obtener la cantidad y el id del producto desde la solicitud
+            int cantidad = Integer.parseInt(request.getParameter("cantidad"));
+            int idProducto = Integer.parseInt(request.getParameter("idproducto"));
+
+            // Validar cantidad
+            if (cantidad <= 0) {
+                response.sendRedirect("error.jsp");
+                return;
+            }
+
+            // Obtener la sesión actual o crear una nueva
+            HttpSession session = request.getSession(true);
+
+            // Obtener la lista de artículos del carrito desde la sesión
+            ArrayList<Articulo> articulos = (ArrayList<Articulo>) session.getAttribute("carrito");
+
+            // Si la lista de artículos aún no existe, crear una nueva
+            if (articulos == null) {
+                articulos = new ArrayList<>();
+            }
+
+            // Verificar si el producto ya está en el carrito
+            boolean encontrado = false;
+            for (Articulo a : articulos) {
+                if (idProducto == a.getIdProducto()) {
+                    a.setCantidad(a.getCantidad() + cantidad);
+                    encontrado = true;
                     break;
                 }
             }
+
+            // Si el producto no está en el carrito, agregarlo
+            if (!encontrado) {
+                articulos.add(new Articulo(idProducto, cantidad));
+            }
+
+            // Guardar la lista actualizada en la sesión
+            session.setAttribute("carrito", articulos);
+
+            // Redirigir a la página del carrito
+            response.sendRedirect("cart.jsp");
+
+        } catch (NumberFormatException e) {
+            // Manejar error si no se pueden convertir los parámetros a números
+            e.printStackTrace();
         }
-        
-        if(!flag) {
-            articulos.add(new Articulo(idproducto, cantidad));
-        }
-        sesion.setAttribute("carrito", articulos);
-        response.sendRedirect("cart.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

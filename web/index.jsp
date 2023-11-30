@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" href="assets/img/logo - copia.png" type="image/x-icon">
+        <link rel="icon" href="assets/img/logo-copia.png" type="image/x-icon">
 
         <title>Aguatzi</title>
 
@@ -17,70 +17,74 @@
 
 
 
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet"type="text/css"/>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
         <link href="assets/css/templatemo-tiya-golf-club.css" rel="stylesheet">
 
 
     </head>
-<body>
+    <body>
 
         <main>
 
-            <div id="sticky-wrapper" class="sticky-wrapper" style="height: 88px;"><nav class="navbar navbar-expand-lg" style="width: 1857px;">                
-                <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="assets/img/logo - copia.png" class="navbar-brand-image img-fluid" alt="logo" width="40px" height="40px">
-                        <span class="navbar-brand-text">
-                            Aguatzi
-                            <small>Purificadora</small>
-                        </span>
-                    </a>
+            <div id="sticky-wrapper" class="sticky-wrapper" style="height: 88px;">
+                <nav class="navbar navbar-expand-lg" style="width: 1857px;">                
+                    <div class="container">
+                        <a class="navbar-brand d-flex align-items-center" href="index.html">
+                            <img src="assets/img/logo-copia.png" class="navbar-brand-image img-fluid" alt="logo" width="40px" height="40px">
+                            <span class="navbar-brand-text">
+                                Aguatzi
+                                <small>Purificadora</small>
+                            </span>
+                        </a>
 
-                    <div class="d-lg-none ms-auto me-3">
-                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Iniciar Sesión</a>
-                    </div>
-    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-lg-auto">
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll active" href="#section_1">Inicio</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll inactive" href="#section_2">Nosotros</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll inactive" href="#section_3">Contáctanos</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll active" href="productos.jsp">Productos</a>
-                            </li>
-    
-                        </ul>
-
-                        <div class="d-none d-lg-block ms-lg-3">
+                        <div class="d-lg-none ms-auto me-3">
                             <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Iniciar Sesión</a>
                         </div>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-lg-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll active" href="index.jsp">Inicio</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll active" href="http://localhost:8080/Aguatzi-web/index.jsp#section_2">Nosotros</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll active" href="productos.jsp">Productos</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll active" href="carrito.jsp">Carrito</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll active" href="http://localhost:8080/Aguatzi-web/index.jsp#section_3">Contáctanos</a>
+                                </li>
+                            </ul>
+
+                            <div class="d-none d-lg-block ms-lg-3">
+                                <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Iniciar Sesión</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
             </div>
 
             <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">                
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Iniciar Sesión</h5>
-                    
+
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                
-               <div class="offcanvas-body d-flex flex-column">
+
+                <div class="offcanvas-body d-flex flex-column">
                     <form class="custom-form member-login-form" action="iniciar" method="post" role="form">
 
                         <div class="member-login-form-body">
@@ -95,7 +99,7 @@
 
                                 <input type="password" name="pass" id="pass" pattern="[0-9a-zA-Z]{4,10}" class="form-control" placeholder="Contraseña" required="">
                             </div>
-                            
+
                             <div class="col-lg-5 col-md-7 col-8 mx-auto">
                                 <button type="submit" class="form-control">Entrar</button>
                             </div>
@@ -106,9 +110,9 @@
                         </div>
                     </form>
                 </div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
             </div>
-            
+
 
             <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
 
@@ -154,8 +158,8 @@
                             <h3 class="mb-3">Aguatzi-historia</h3>
 
                             <p><strong>Desde 2018, </strong> Aguatzi es una empresa dedicada a la purificación, venta y distribución de agua ubicada en Ciudad Obregón, Sonora. Estamos comprometidos con la calidad y la satisfacción del cliente.<br /><br />
-                    Nuestra historia se remonta a años de servicio ininterrumpido y a la confianza que han depositado en nosotros. En Aguatzi, creemos en la importancia de la salud y el bienestar, y es por eso que trabajamos incansablemente para ofrecer agua pura y segura a la comunidad.<br /><br />
-                    Gracias por elegirnos como su proveedor de agua. Esperamos seguir siendo su elección número uno para todas sus necesidades de agua purificada.</p>
+                                Nuestra historia se remonta a años de servicio ininterrumpido y a la confianza que han depositado en nosotros. En Aguatzi, creemos en la importancia de la salud y el bienestar, y es por eso que trabajamos incansablemente para ofrecer agua pura y segura a la comunidad.<br /><br />
+                                Gracias por elegirnos como su proveedor de agua. Esperamos seguir siendo su elección número uno para todas sus necesidades de agua purificada.</p>
                         </div>
 
                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
@@ -167,7 +171,7 @@
 
                             </div>
                         </div>
-                </div>
+                    </div>
             </section>
 
 
@@ -185,8 +189,8 @@
 
                                 <form action="productos.jsp" method="get" class="custom-form mt-lg-4 mt-2" role="form">
                                     <div class="input-group input-group-lg">
-                                       
-                                        <button type="submit" class="form-control" hr>Comprar</button>
+
+                                        <button type="submit" class="form-control" >Comprar</button>
                                     </div>
                                 </form>
                             </div>
@@ -197,7 +201,7 @@
 
                 <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
             </section>
-            
+
             <section class="contact-section section-padding" id="section_3">
                 <div class="container">
                     <div class="row">
@@ -210,7 +214,7 @@
                                     <div class="col-lg-6 col-md-6 col-12">
                                         <div class="form-floating">
                                             <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="">
-                                            
+
                                             <label for="floatingInput">Nombre completo</label>
                                         </div>
                                     </div>
@@ -218,7 +222,7 @@
                                     <div class="col-lg-6 col-md-6 col-12"> 
                                         <div class="form-floating">
                                             <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
-                                            
+
                                             <label for="floatingInput">Correo</label>
                                         </div>
                                     </div>
@@ -226,7 +230,7 @@
                                     <div class="col-lg-12 col-12">
                                         <div class="form-floating">
                                             <textarea class="form-control" id="message" name="message" placeholder="Describe message here"></textarea>
-                                            
+
                                             <label for="floatingTextarea">Mensaje</label>
                                         </div>
 
@@ -239,10 +243,10 @@
                         <div class="col-lg-6 col-12">
                             <div class="contact-info mt-5">
                                 <div class="contact-info-item">
-                                   
+
                                 </div>
 
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56618.23832972199!2d-109.9686769847803!3d27.511572552053682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86c8177a1aa1671f%3A0x301e765812976617!2sAgua%20aguatzi!5e0!3m2!1ses-419!2smx!4v1699962122806!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56618.23832972199!2d-109.9686769847803!3d27.511572552053682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86c8177a1aa1671f%3A0x301e765812976617!2sAgua%20aguatzi!5e0!3m2!1ses-419!2smx!4v1699962122806!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
 
@@ -282,21 +286,21 @@
                         <p class="copyright-text">Copyright © 2023 Equipo 3</p>
                     </div>
 
-                        <div class="col-lg-2 col-12 ms-auto">
-                            <ul class="social-icon mt-lg-5 mt-3 mb-4">
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-instagram"></a>
-                                </li>
+                    <div class="col-lg-2 col-12 ms-auto">
+                        <ul class="social-icon mt-lg-5 mt-3 mb-4">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
 
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-twitter"></a>
-                                </li>
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
 
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
-                                </li>
-                            </ul>                            
-                        </div>
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-whatsapp"></a>
+                            </li>
+                        </ul>                            
+                    </div>
 
                 </div>
             </div>
