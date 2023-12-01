@@ -33,7 +33,7 @@
                 <nav class="navbar navbar-expand-lg" style="width: 1857px;">                
                     <div class="container">
                         <a class="navbar-brand d-flex align-items-center" href="index.html">
-                            <img src="assets/img/logo-copia.png" class="navbar-brand-image img-fluid" alt="logo" width="40px" height="40px">
+                            <img src="assets/img/logo-copia.png" class="navbar-brand-image img-fluid" alt="logo" width="40" height="40">
                             <span class="navbar-brand-text">
                                 Aguatzi
                                 <small>Purificadora</small>
@@ -63,7 +63,7 @@
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link click-scroll active" href="carrito.jsp">Carrito</a>
+                                    <a class="nav-link click-scroll active" href="cart.jsp">Carrito</a>
                                 </li>
                                 
                                 <li class="nav-item">
@@ -136,7 +136,7 @@
                         <h4>No hay artículos en el carrito de compras</h4>
                         <% }%>
                     </div>
-                    <a href="javascript:window.history.go(-2);">Seguir Comprando</a>
+                    <a href="productos.jsp;">Seguir Comprando</a>
                 </div>
                 <div class="col-sm-4">
                     <div class="card">

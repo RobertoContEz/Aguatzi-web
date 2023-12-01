@@ -61,7 +61,7 @@
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link click-scroll active" href="carrito.jsp">Carrito</a>
+                                    <a class="nav-link click-scroll active" href="cart.jsp">Carrito</a>
                                 </li>
                                 
                                 <li class="nav-item">
