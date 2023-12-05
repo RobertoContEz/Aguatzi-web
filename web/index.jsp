@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="es" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
     <head>
@@ -24,20 +25,17 @@
 
     </head>
     <body>
-
         <main>
-
             <div id="sticky-wrapper" class="sticky-wrapper" style="height: 88px;">
                 <nav class="navbar navbar-expand-lg" style="width: 1857px;">                
                     <div class="container">
-                        <a class="navbar-brand d-flex align-items-center" href="index.html">
-                            <img src="assets/img/logo-copia.png" class="navbar-brand-image img-fluid" alt="logo" width="40px" height="40px">
+                        <a class="navbar-brand d-flex align-items-center" href="index.jsp">
+                            <img src="assets/img/logo-copia.png" class="navbar-brand-image img-fluid" alt="logo" width="40" height="40">
                             <span class="navbar-brand-text">
-                                Aguatzi
-                                <small>Purificadora</small>
+                                Purificadora
+                                <small>Aguatzi</small>
                             </span>
                         </a>
-
                         <div class="d-lg-none ms-auto me-3">
                             <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Iniciar Sesión</a>
                         </div>
@@ -53,7 +51,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link click-scroll active" href="http://localhost:8080/Aguatzi-web/index.jsp#section_2">Nosotros</a>
+                                    <a class="nav-link click-scroll active" href="index.jsp#section_2">Nosotros</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -65,7 +63,7 @@
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link click-scroll active" href="http://localhost:8080/Aguatzi-web/index.jsp#section_3">Contáctanos</a>
+                                    <a class="nav-link click-scroll active" href="index.jsp#section_3">Contáctanos</a>
                                 </li>
                             </ul>
 
@@ -234,7 +232,7 @@
                                             <label for="floatingTextarea">Mensaje</label>
                                         </div>
 
-                                        <button type="submit" class="form-control" <link rel="stylesheet" href="url"/>>Enviar</button>
+                                        <button type="submit" class="form-control"> <link rel="stylesheet" href="url"/>Enviar</button>
                                     </div>
                                 </div>
                             </form>
@@ -246,7 +244,7 @@
 
                                 </div>
 
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56618.23832972199!2d-109.9686769847803!3d27.511572552053682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86c8177a1aa1671f%3A0x301e765812976617!2sAgua%20aguatzi!5e0!3m2!1ses-419!2smx!4v1699962122806!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884.8423818771478!2d-109.91038653036674!3d27.488880988214056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86c815bc47c4ff75%3A0x12b48b6366a21d79!2sAgua%20Aguatzi!5e0!3m2!1ses-419!2smx!4v1701463272794!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
 
@@ -255,58 +253,8 @@
             </section>
 
         </main>
-
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-6 col-12 me-auto mb-5 mb-lg-0">
-                        <a class="navbar-brand d-flex align-items-center" href="index.html">
-                            <img src="assets/img/logonegro.png" class="navbar-brand-image img-fluid" alt="">
-                            <span class="navbar-brand-text">
-                                Aguatzi
-                                <small>Purificadora</small>
-                            </span>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-12">
-                        <h5 class="site-footer-title mb-4">Horarios</h5>
-
-                        <p class="d-flex border-bottom pb-3 mb-3 me-lg-3">
-                            <span>Lun-Vier</span>
-                            8:00 AM - 8:00 PM
-                        </p>
-
-                        <p class="d-flex me-lg-3">
-                            <span>Sab-Dom</span>
-                            8:30 AM - 2:30 PM
-                        </p>
-                        <br>
-                        <p class="copyright-text">Copyright © 2023 Equipo 3</p>
-                    </div>
-
-                    <div class="col-lg-2 col-12 ms-auto">
-                        <ul class="social-icon mt-lg-5 mt-3 mb-4">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-instagram"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-twitter"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-whatsapp"></a>
-                            </li>
-                        </ul>                            
-                    </div>
-
-                </div>
-            </div>
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#81B29A" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-        </footer>
+        <!-- Footer -->
+        <%@include file="jspf/footer.jspf"%>
 
 
         <!-- JAVASCRIPT FILES -->
