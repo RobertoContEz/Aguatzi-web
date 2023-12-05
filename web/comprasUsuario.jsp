@@ -50,26 +50,27 @@
         <title>Mis compras</title>
     </head>
     <body>
-        <header class="">
-            <nav class="navbar navbar-expand-lg" style="width: 1857px;">                
-                <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="index.jsp">
-                        <img src="assets/img/logo-copia.png" class="navbar-brand-image img-fluid" alt="logo" width="40" height="40">
-                        <span class="navbar-brand-text">
-                            Purificadora
-                            <small>Aguatzi</small>
-                        </span>
-                    </a>
-                    <div class="d-lg-none ms-auto me-3">
-                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button">Iniciar Sesión</a>
-                    </div>
-                    <!-- Opciones -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <main>
+            <div id="sticky-wrapper" class="sticky-wrapper" style="height: 88px;">
+                <nav class="navbar navbar-expand-lg" style="width: 1857px;">                
+                    <div class="container">
+                        <a class="navbar-brand d-flex align-items-center" href="index.jsp">
+                            <img src="assets/img/logo-copia.png" class="navbar-brand-image img-fluid" alt="logo" width="40" height="40">
+                            <span class="navbar-brand-text">
+                                Purificadora
+                                <small>Aguatzi</small>
+                            </span>
+                        </a>
+                        <div class="d-lg-none ms-auto me-3">
+                            <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Iniciar Sesión</a>
+                        </div>
 
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-lg-auto">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-lg-auto">
 
                             <li class="nav-item">
                                 <a class="nav-link" href="index.jsp">Inicio</a>
@@ -98,7 +99,7 @@
                     </div>
                 </div>
             </nav>
-        </header>
+        
 
         
  <%
@@ -108,7 +109,7 @@
             ArrayList<Producto> productos = sql.obtenerProductos(idCompra);
             System.out.println(productos.size());
         %>
-        <main>
+        
             <section class="hero-section hero-50 d-flex justify-content-center align-items-center" id="section_1">
                 <h2 style="text-align: center;">ID Compra: <%= idCompra%></h2>
                 <h3 style="text-align: center;">Total Compra: <%= total%></h3>
