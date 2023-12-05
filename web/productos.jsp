@@ -76,7 +76,7 @@
                                 <a class="nav-link" href="cart.jsp">Carrito</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="comprasUsuario.jsp"">Mis compras</a>
+                                <a class="nav-link" href="comprasUsuario.jsp">Mis compras</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="index.jsp#section_3">Contáctanos</a>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
             </nav>
-              </header>
+            </header>
         <main>
             
             <!-- Section Garrafones-->
@@ -123,16 +123,16 @@
             </section>
         </main>
     <!-- Footer -->
-<<<<<<< HEAD
+
     <%@include file="jspf/footerEquipo.jspf"%>
     
-=======
+
     <footer class="py-5 bg-dark">
         <div class="container"><p class="m-0 text-center text-white">Copyright &copy; 2023 Equipo 3 </p></div>
     </footer>
     <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
->>>>>>> 0b51b8ab888c03751fbb2fa54389bdca65b0eda4
+
 </body>
 </html>

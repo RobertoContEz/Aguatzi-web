@@ -24,7 +24,7 @@
 
 <html lang="es" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
     <head>
-        <meta charset="UTF-8">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
 
@@ -61,7 +61,7 @@
                         </span>
                     </a>
                     <div class="d-lg-none ms-auto me-3">
-                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Iniciar Sesión</a>
+                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button">Iniciar Sesión</a>
                     </div>
                     <!-- Opciones -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,7 +84,7 @@
                                 <a class="nav-link" href="cart.jsp">Carrito</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="comprasUsuario.jsp"">Mis compras</a>
+                                <a class="nav-link" href="comprasUsuario.jsp">Mis compras</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="index.jsp#section_3">Contáctanos</a>
@@ -108,36 +108,41 @@
             ArrayList<Producto> productos = sql.obtenerProductos(idCompra);
             System.out.println(productos.size());
         %>
-   
-            <h2 style="text-align: center;">ID Compra: <%= idCompra %></h2>
-        <h3 style="text-align: center;">Total Compra: <%= total %></h3>
-        <table border="1" class="comprasTable">
-            <thead>
-                <tr>
-                    <th>ID Producto</th>
-                    <th>Nombre</th>
-                    <th>Imagen </th>
-                    <th>Precio </th>
-                    <th>Cantidad </th>
-                    <th>Subtotal </th>
-                </tr>
-            </thead>
-            <tbody>
-                <% for(Producto producto : productos){ %>
-                    <tr>
-                        <td><%= producto.getId() %></td>
-                        <td><%= producto.getNombre() %></td>
-                        <td><img src="<%= producto.getImg() %>" alt="" width="100px" height="100px"/></td>
-                        <td><%= producto.getPrecio() %></td>
-                        <td><%= producto.getStock() %></td>
-                        <td><%= Math.round(producto.getPrecio() * producto.getStock() * 100.0) / 100.0%></td>
-                    </tr>
-                <% } %>
-            </tbody>
-        </table>
-    <% } %>
+        <main>
+            <section class="hero-section hero-50 d-flex justify-content-center align-items-center" id="section_1">
+                <h2 style="text-align: center;">ID Compra: <%= idCompra%></h2>
+                <h3 style="text-align: center;">Total Compra: <%= total%></h3>
+                <table border="1" class="comprasTable">
+                    <thead>
+                        <tr>
+                            <th>ID Producto</th>
+                            <th>Nombre</th>
+                            <th>Imagen </th>
+                            <th>Precio </th>
+                            <th>Cantidad </th>
+                            <th>Subtotal </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (Producto producto : productos) {%>
+                        <tr>
+                            <td><%= producto.getId()%></td>
+                            <td><%= producto.getNombre()%></td>
+                            <td><img src="<%= producto.getImg()%>" alt="" width="100" height="100"/></td>
+                            <td><%= producto.getPrecio()%></td>
+                            <td><%= producto.getStock()%></td>
+                            <td><%= Math.round(producto.getPrecio() * producto.getStock() * 100.0) / 100.0%></td>
+                        </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+                <% }%>
+            </section>
+        </main>    
+        
+        
     
-  <!-- Footer -->
+        <!-- Footer -->
         <%@include file="jspf/footerEquipo.jspf"%>
 
         <!-- JAVASCRIPT FILES -->

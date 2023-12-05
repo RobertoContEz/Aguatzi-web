@@ -148,18 +148,18 @@
                                             </td>
                                             <td class="cart_quantity">
                                                 <div class="cart_quantity_button">
-                                            <a href="#" class="cart_quantity_up"> + </a>
-                                            <input class="cart_quantity_input" type="text" name="quantity" value="<%= a.getCantidad()%>"
-                                                   autocomplete="off" size="2" disabled>
-                                            <a href="#" class="cart_quantity_down"> - </a>
-                                        </div>
+                                                    <a href="#" class="cart_quantity_up"> + </a>
+                                                    <input class="cart_quantity_input" type="text" name="quantity" value="<%= a.getCantidad()%>"
+                                                           autocomplete="off" size="2" disabled>
+                                                    <a href="#" class="cart_quantity_down"> - </a>
+                                                </div>
                                             </td>
                                             <td class="cart_total">
-                                                <p class="cart_total_price" name="txt-subtotal">$<%= Math.round(producto.getPrecio() * a.getCantidad() * 100.0) / 100.0%></p>
+                                                <p class="cart_total_price">$<%= Math.round(producto.getPrecio() * a.getCantidad() * 100.0) / 100.0%></p>
                                             </td>
                                             <td class="cart_delete">
                                                 <span id="idarticulo" style="display: none;"><%= producto.getId()%></span>
-                                                <a class="cart_quantity_delete" href="#" class="deleteitem"><i class="fa fa-times"></i></a>
+                                                <a class="cart_quantity_delete" href="#" ><i class="fa fa-times"></i></a>
                                             </td>
                                         </tr>
                                         <%
@@ -191,7 +191,7 @@
                                     </tr>
                                     <tr>
                                         <td>Total</td>
-                                        <td><span id="txt-total" name="total">$ <%= Math.round(total * 116.0) / 100.0%></span></td>
+                                        <td><span id="txt-total">$ <%= Math.round(total * 116.0) / 100.0%></span></td>
                                     </tr>
                                     
                                 </table>

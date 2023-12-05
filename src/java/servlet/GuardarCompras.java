@@ -32,43 +32,53 @@ public class GuardarCompras extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         HttpSession sesion = request.getSession(false);
+        String nombreUsuario = (String) sesion.getAttribute("usuario"); // Reemplaza "nombreDeUsuario" con el atributo correcto de la sesión
         ArrayList<Articulo> articulos = (ArrayList<Articulo>) sesion.getAttribute("carrito");
 
-        if(articulos==null || articulos.isEmpty()){
+        if(articulos == null || articulos.isEmpty()){
             request.getSession().setAttribute("msj", "No hay productos en el carro");
             request.getSession().removeAttribute("carrito");
             response.sendRedirect("index.jsp");
         }else{
             String subtotal = request.getParameter("total");
             float total = Float.parseFloat(subtotal);
-            String usuario = request.getParameter("usuario");  // Utiliza getParameter para obtener valores del formulario
-            System.out.println(usuario);
+            
+            
+            System.out.println("Usuario:"+nombreUsuario);
             Consultas sql = new Consultas();
-            int id_usuario = sql.buscarUsuario(usuario);
-
-            sql = new Consultas();
-
-            int id_compra = sql.registrarCompras(id_usuario, total);
-            ArrayList<String> mensajesError = new ArrayList<>();
-            for (int i = 0; i < articulos.size(); i++) {
+            int id_usuario = sql.buscarUsuario(nombreUsuario);
+            if (id_usuario != -1) {
+                // Continuar con la lógica de la compra ya que se encontró el usuario
                 sql = new Consultas();
-                if (!sql.registrarVentas(articulos.get(i), id_compra)) {
-                    // Si hay un error, agrega el mensaje al ArrayList
-                    mensajesError.add("Error al registrar la compra");
-                }
-            }
 
-    // Después del bucle, verifica si hubo errores y realiza la redirección si es necesario
-            if (!mensajesError.isEmpty()) {
-                request.getSession().setAttribute("mensaje", "No se pudo realizar la compra");
-                request.getSession().removeAttribute("carrito");
-                response.sendRedirect("index.jsp");
+                int id_compra = sql.registrarCompras(id_usuario, total);
+                ArrayList<String> mensajesError = new ArrayList<>();
+                for (int i = 0; i < articulos.size(); i++) {
+                    sql = new Consultas();
+                    if (!sql.registrarVentas(articulos.get(i), id_compra)) {
+                        // Si hay un error, agrega el mensaje al ArrayList
+                        mensajesError.add("Error al registrar la compra");
+                    }
+                }
+                // Después del bucle, verifica si hubo errores y realiza la redirección si es necesario
+                if (!mensajesError.isEmpty()) {
+                    request.getSession().setAttribute("mensaje", "No se pudo realizar la compra");
+                    request.getSession().removeAttribute("carrito");
+                    response.sendRedirect("index.jsp");
+                } else {
+                    // Si no hubo errores, establece el mensaje de éxito y realiza la redirección
+                    request.getSession().setAttribute("mensaje", "Compra registrada correctamente");
+                    request.getSession().removeAttribute("carrito");
+                    response.sendRedirect("index.jsp");
+                }
             } else {
-                // Si no hubo errores, establece el mensaje de éxito y realiza la redirección
-                request.getSession().setAttribute("mensaje", "Compra registrada correctamente");
-                request.getSession().removeAttribute("carrito");
-                response.sendRedirect("index.jsp");
+                // Mostrar un mensaje de error o redirigir indicando que no se encontró el usuario
+                request.getSession().setAttribute("mensaje", "No se guardo la compra");
+                response.sendRedirect("cart.jsp");
             }
+            
+
+    
         }
             
     }

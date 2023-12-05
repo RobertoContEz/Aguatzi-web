@@ -100,7 +100,7 @@ public class Consultas {
         ResultSet rs = null;
         int idUsuario = 0;
         try {
-            String consulta = "select id_usuario from usuarios where nombre=?";
+            String consulta = "SELECT id_usuario FROM usuarios WHERE nombre=?";
             System.out.println("Consulta es: " + consulta);
             pst = con.getConexion().prepareStatement(consulta);
             pst.setString(1, usuario);
@@ -112,6 +112,7 @@ public class Consultas {
 
         } catch (Exception e) {
             System.out.println("Error en: " + e);
+            e.printStackTrace(); // Imprimir la traza completa del error
         } finally {
             try {
                 if (con.getConexion() != null) {
@@ -128,8 +129,8 @@ public class Consultas {
             }
         }
         return -1;
-
     }
+
     
        public Usuario obtenerUsuario( String nombre) {
         Usuario usuario = null;
