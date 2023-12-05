@@ -9,14 +9,14 @@ public class Producto {
     private int id;
     private String nombre;
     private String img;
-    private double precio;
+    private float precio;
     private String tipo;
     private int stock;
 
     public Producto() {
     }
 
-    public Producto(int id, String nombre, String img, double precio, String tipo, int stock) {
+    public Producto(int id, String nombre, String img, float precio, String tipo, int stock) {
         this.id = id;
         this.nombre = nombre;
         this.img = img;
@@ -49,7 +49,7 @@ public class Producto {
         this.img = img;
     }
 
-    public double getPrecio() {
+    public float getPrecio() {
         return precio;
     }
 
@@ -61,7 +61,7 @@ public class Producto {
         this.tipo = tipo;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(float precio) {
         this.precio = precio;
     }
 

@@ -26,7 +26,7 @@ public class ModeloProducto extends Conexion {
                         rs.getInt("id_producto"),
                         rs.getString("nombre"),
                         rs.getString("img_producto"),
-                        rs.getDouble("precio"),
+                        rs.getFloat("precio"),
                         rs.getString("tipo"),
                         rs.getInt("stock")
                 ));
@@ -66,7 +66,7 @@ public class ModeloProducto extends Conexion {
                         rs.getInt("id_producto"),
                         rs.getString("nombre"),
                         rs.getString("img_producto"),
-                        rs.getDouble("precio"),
+                        rs.getFloat("precio"),
                         rs.getString("tipo"),
                         rs.getInt("stock")
                 );

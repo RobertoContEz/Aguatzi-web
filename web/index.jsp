@@ -55,7 +55,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link click-scroll active" href="productos.jsp">Productos</a>
+                                    <a class="nav-link" href="productos.jsp">Productos</a>
                                 </li>
                                 
                                 <li class="nav-item">
