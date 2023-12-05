@@ -4902,7 +4902,7 @@ textarea.form-control-lg {
     border-left-width: 0;
   }
   .list-group-horizontal-sm > .list-group-item + .list-group-item.active {
-    margin-left: calc(-1 * var(--bs-list-group-border-width));
+    margin-left: calc(-1 * var(--bs-list-group-border-width);
     border-left-width: var(--bs-list-group-border-width);
   }
 }
@@ -4949,11 +4949,10 @@ textarea.form-control-lg {
     border-left-width: 0;
   }
   .list-group-horizontal-lg > .list-group-item + .list-group-item.active {
-<<<<<<< Updated upstream
     margin-left: calc(-1 * var(--bs-list-group-border-width));
-=======
-    /*margin-left: calc(-1 * var(--bs-list-group-border-width));*/
->>>>>>> Stashed changes
+
+    margin-left: calc(-1 * var(--bs-list-group-border-width));
+
     border-left-width: var(--bs-list-group-border-width);
   }
 }
@@ -4977,11 +4976,11 @@ textarea.form-control-lg {
     border-left-width: 0;
   }
   .list-group-horizontal-xl > .list-group-item + .list-group-item.active {
-<<<<<<< Updated upstream
+ 
     margin-left: calc(-1 * var(--bs-list-group-border-width));
-=======
-    /*margin-left: calc(-1 * var(--bs-list-group-border-width));*/
->>>>>>> Stashed changes
+
+margin-left: calc(-1 * var(--bs-list-group-border-width));
+
     border-left-width: var(--bs-list-group-border-width);
   }
 }
@@ -5174,12 +5173,9 @@ textarea.form-control-lg {
   --bs-toast-padding-y: 0.5rem;
   --bs-toast-spacing: 1.5rem;
   --bs-toast-max-width: 350px;
-  --bs-toast-font-size: 0.875rem;
-<<<<<<< Updated upstream
+  --bs-toast-font-size: 0.875rem
   --bs-toast-color: 
-=======
   --bs-toast-color:
->>>>>>> Stashed changes
   --bs-toast-bg: rgba(255, 255, 255, 0.85);
   --bs-toast-border-width: 1px;
   --bs-toast-border-color: var(--bs-border-color-translucent);
