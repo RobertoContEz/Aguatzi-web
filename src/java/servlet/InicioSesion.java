@@ -9,6 +9,7 @@ import controlador.Consultas;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,6 +19,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author rc0nt
  */
+@WebServlet(name = "InicioSesion", urlPatterns = {"/iniciarSesion"})
 public class InicioSesion extends HttpServlet {
 
     /**
@@ -40,13 +42,17 @@ public class InicioSesion extends HttpServlet {
         Consultas sql = new Consultas();
         
         if(sql.autenticacion(usuario, clave)==1) {
-            HttpSession objSesion = request.getSession(true);
-            objSesion.removeAttribute("carrito");
+        HttpSession objSesion = request.getSession(true);
             objSesion.setAttribute("usuario", usuario);
             response.sendRedirect("productos.jsp");
-        } else {
+        } else if (sql.autenticacion(usuario, clave)==2) {
+            HttpSession objSesion = request.getSession(true);
+            objSesion.setAttribute("usuario", usuario);
+            response.sendRedirect("admin.jsp");
+        } else{
             response.sendRedirect("index.jsp");
         }
+ 
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
