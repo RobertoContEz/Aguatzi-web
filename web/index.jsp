@@ -21,6 +21,7 @@
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
         <link href="assets/css/templatemo-tiya-golf-club.css" rel="stylesheet">
+                <link href="assets/css/templatemo-sixteen.css" rel="stylesheet" type="text/css"/>
 
 
     </head>

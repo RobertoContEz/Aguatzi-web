@@ -1,3 +1,4 @@
+
 package servlet;
 
 import controlador.Consultas;
@@ -15,7 +16,7 @@ import modelo.Articulo;
  *
  * @author chaly
  */
-@WebServlet(name = "GuardarCompras", urlPatterns = {"/guardarCompra"})
+@WebServlet(name = "GuardarCompras", urlPatterns = {"/guardarCompras"})
 public class GuardarCompras extends HttpServlet {
 
     /**

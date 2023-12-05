@@ -174,6 +174,41 @@ public class Consultas {
         }
         return usuario;
     }
+       
+       public boolean eliminarUsuarios(int id_usuario) {
+        PreparedStatement pst = null;
+        try {
+
+            String consulta = "DELETE FROM direccion WHERE id_usuario = ?";
+            pst = con.getConexion().prepareStatement(consulta);
+            pst.setInt(1, id_usuario);
+
+            if (pst.executeUpdate() == 1) {
+                consulta = "DELETE FROM usuarios WHERE id_usuario = ?";
+                pst = con.getConexion().prepareStatement(consulta);
+                pst.setInt(1, id_usuario);
+                if (pst.executeUpdate() == 1) {
+                    return true;
+                }
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error en: " + e);
+        } finally {
+            try {
+                if (con.getConexion() != null) {
+                    con.getConexion().close();
+                }
+                if (pst != null) {
+                    pst.close();
+                }
+            } catch (Exception e) {
+                System.out.println("Error en: " + e);
+            }
+        }
+        return false;
+    }
+       
         //  -----------------------------------------------------------------------------------------------
 
 
@@ -337,6 +372,8 @@ public class Consultas {
         return false;
     }
     
+        // PARA LOS PRODUCTOS -----------------------------------------------------------------------------------------------
+
     public boolean actualizarProductos(Producto producto) {
         PreparedStatement pstUsuarios = null;
 
@@ -371,6 +408,69 @@ public class Consultas {
         return false;
     }
 
+     public boolean eliminarProducto(int id_producto) {
+        PreparedStatement pst = null;
+        try {
+
+            System.out.println("Agregar");
+            String consulta = "DELETE FROM productos WHERE id_producto = ?";
+            pst = con.getConexion().prepareStatement(consulta);
+            pst.setInt(1, id_producto);
+
+            if (pst.executeUpdate() == 1) {
+                return true;
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error en: " + e);
+        } finally {
+            try {
+                if (con.getConexion() != null) {
+                    con.getConexion().close();
+                }
+                if (pst != null) {
+                    pst.close();
+                }
+            } catch (Exception e) {
+                System.out.println("Error en: " + e);
+            }
+        }
+        return false;
+    }
+
+     public boolean agregarProducto(String nombre, String img, float precio, String tipo, int stock) {
+        PreparedStatement pst = null;
+        try {
+
+            System.out.println("Agregar");
+            String consulta = "insert into productos(nombre,img_producto,precio,tipo,stock) values(?,?,?,?,?)";
+            pst = con.getConexion().prepareStatement(consulta);
+            pst.setString(1, nombre);
+            pst.setString(2, img);
+            pst.setFloat(3, precio);
+            pst.setString(4, tipo);
+            pst.setInt(5, stock);
+
+            if (pst.executeUpdate() == 1) {
+                return true;
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error en: " + e);
+        } finally {
+            try {
+                if (con.getConexion() != null) {
+                    con.getConexion().close();
+                }
+                if (pst != null) {
+                    pst.close();
+                }
+            } catch (Exception e) {
+                System.out.println("Error en: " + e);
+            }
+        }
+        return false;
+    }
 
     // -----------------------------------------------------------------------------------------------
 }

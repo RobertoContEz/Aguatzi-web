@@ -35,6 +35,7 @@
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
         <link href="assets/css/templatemo-tiya-golf-club.css" rel="stylesheet">
+                <link href="assets/css/templatemo-sixteen.css" rel="stylesheet" type="text/css"/>
         <style>
             .table-white-bg {
                 background-color: #ffffff;
@@ -45,21 +46,7 @@
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/jquery.sticky.js"></script>
         <script src="assets/js/custom.js"></script>
-        <script>
-            function actualizarCantidad(index, idProducto) {
-                var nuevaCantidad = parseInt(prompt("Ingrese la nueva cantidad:", ""));
-                if (!isNaN(nuevaCantidad) && nuevaCantidad >= 0) {
-                    document.getElementsByName("quantity")[index].value = nuevaCantidad;
-                }
-            }
-
-            function eliminarProducto(index, idProducto) {
-                var confirmacion = confirm("¿Seguro que desea eliminar este producto?");
-                if (confirmacion) {
-                    document.getElementsByName("quantity")[index].parentNode.parentNode.remove();
-                }
-            }
-        </script>
+        
     </head>
 
     <body>
@@ -212,7 +199,7 @@
                             </div>
                                     
                             <div class="card-footer">
-                                <form action="guardarCompra" method="post">
+                                <form action="guardarCompras" method="post">
                                     <input type="hidden" name="total" value="<%= total%>">
                                     <input type="hidden" name="correo" value="<%= usuario%>">
             

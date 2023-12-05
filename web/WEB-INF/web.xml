@@ -18,8 +18,24 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet>
+        <servlet-name>EliminarArticulos</servlet-name>
+        <servlet-class>servlet.EliminarArticulos</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>GuardarCompras</servlet-name>
         <servlet-class>servlet.GuardarCompras</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EliminarUsuarios</servlet-name>
+        <servlet-class>servlet.EliminarUsuarios</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AgregarProductos</servlet-name>
+        <servlet-class>servlet.AgregarProductos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActualizarProductos</servlet-name>
+        <servlet-class>servlet.ActualizarProductos</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>InicioSesion</servlet-name>
@@ -38,8 +54,24 @@
         <url-pattern>/faces/*</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>EliminarArticulos</servlet-name>
+        <url-pattern>/eliminarArticulos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>GuardarCompras</servlet-name>
-        <url-pattern>/guardarCompra</url-pattern>
+        <url-pattern>/guardarCompras</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EliminarUsuarios</servlet-name>
+        <url-pattern>/eliminarUsuarios</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgregarProductos</servlet-name>
+        <url-pattern>/agregarProductos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActualizarProductos</servlet-name>
+        <url-pattern>/actualizarProductos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
