@@ -4155,7 +4155,7 @@ textarea.form-control-lg {
   --bs-card-cap-padding-x: 1rem;
   --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
   --bs-card-cap-color: 
-  --bs-card-height: 
+  --bs-card-height:; 
   --bs-card-color: ;
   --bs-card-bg: #fff;
   --bs-card-img-overlay-padding: 1rem;
@@ -4464,7 +4464,7 @@ textarea.form-control-lg {
   --bs-breadcrumb-padding-y: 0;
   --bs-breadcrumb-margin-bottom: 1rem;
   --bs-breadcrumb-border-radius: 
-  --bs-breadcrumb-divider-color: #6c757d;
+  --bs-breadcrumb-divider-color:#6c757d;
   --bs-breadcrumb-item-padding-x: 0.5rem;
   --bs-breadcrumb-item-active-color: #6c757d;
   display: flex;
@@ -4949,7 +4949,11 @@ textarea.form-control-lg {
     border-left-width: 0;
   }
   .list-group-horizontal-lg > .list-group-item + .list-group-item.active {
+<<<<<<< Updated upstream
     margin-left: calc(-1 * var(--bs-list-group-border-width));
+=======
+    /*margin-left: calc(-1 * var(--bs-list-group-border-width));*/
+>>>>>>> Stashed changes
     border-left-width: var(--bs-list-group-border-width);
   }
 }
@@ -4973,7 +4977,11 @@ textarea.form-control-lg {
     border-left-width: 0;
   }
   .list-group-horizontal-xl > .list-group-item + .list-group-item.active {
+<<<<<<< Updated upstream
     margin-left: calc(-1 * var(--bs-list-group-border-width));
+=======
+    /*margin-left: calc(-1 * var(--bs-list-group-border-width));*/
+>>>>>>> Stashed changes
     border-left-width: var(--bs-list-group-border-width);
   }
 }
@@ -4997,7 +5005,11 @@ textarea.form-control-lg {
     border-left-width: 0;
   }
   .list-group-horizontal-xxl > .list-group-item + .list-group-item.active {
+<<<<<<< Updated upstream
     margin-left: calc(-1 * var(--bs-list-group-border-width));
+=======
+    /*margin-left: calc(-1 * var(--bs-list-group-border-width));*/
+>>>>>>> Stashed changes
     border-left-width: var(--bs-list-group-border-width);
   }
 }
@@ -5163,7 +5175,11 @@ textarea.form-control-lg {
   --bs-toast-spacing: 1.5rem;
   --bs-toast-max-width: 350px;
   --bs-toast-font-size: 0.875rem;
+<<<<<<< Updated upstream
   --bs-toast-color: 
+=======
+  --bs-toast-color:
+>>>>>>> Stashed changes
   --bs-toast-bg: rgba(255, 255, 255, 0.85);
   --bs-toast-border-width: 1px;
   --bs-toast-border-color: var(--bs-border-color-translucent);
