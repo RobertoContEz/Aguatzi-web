@@ -36,8 +36,11 @@ public class Consultas {
                 if (tipo.equals("usuario")) {
                     System.out.println("Usuario " + nombre + " autenticado.");
                     return 1;
-                } else {
+                } else if (tipo.equals("admin")) {
+                    System.out.println("Administrador " + nombre + " autenticado.");
                     return 2;
+                } else {
+                    return 0;
                 }
             }
 

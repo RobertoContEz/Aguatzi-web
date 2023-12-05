@@ -41,11 +41,13 @@ public class InicioSesion extends HttpServlet {
         
         Consultas sql = new Consultas();
         
-        if(sql.autenticacion(usuario, clave)==1) {
+        int a = sql.autenticacion(usuario, clave);
+        
+        if(a==1) {
         HttpSession objSesion = request.getSession(true);
             objSesion.setAttribute("usuario", usuario);
             response.sendRedirect("productos.jsp");
-        } else if (sql.autenticacion(usuario, clave)==2) {
+        } else if (a==2) {
             HttpSession objSesion = request.getSession(true);
             objSesion.setAttribute("usuario", usuario);
             response.sendRedirect("admin.jsp");

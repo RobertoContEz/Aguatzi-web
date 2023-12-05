@@ -3,13 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/chaly/Documents/Aguatzi-web/web/index.jsp</file>
-            <file>file:/C:/Users/chaly/Documents/Aguatzi-web/web/home.jsp</file>
-            <file>file:/C:/Users/chaly/Documents/Aguatzi-web/web/cart.jsp</file>
-            <file>file:/C:/Users/chaly/Documents/Aguatzi-web/web/comprasUsuario.jsp</file>
-            <file>file:/C:/Users/chaly/Documents/Aguatzi-web/web/admin.jsp</file>
-            <file>file:/C:/Users/chaly/Documents/Aguatzi-web/web/registrar.jsp</file>
-            <file>file:/C:/Users/chaly/Documents/Aguatzi-web/web/productos.jsp</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/web/productos.jsp</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/web/index.jsp</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/src/java/modelo/Producto.java</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/src/java/modelo/ModeloProducto.java</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/web/home.jsp</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/src/java/servlet/AddCart.java</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/src/java/modelo/Articulo.java</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/src/java/servlet/RegistrarUsuarios.java</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/web/registrar.jsp</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/web/assets/css/bootstrap.min.css</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/web/assets/css/styles.css</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/src/java/servlet/InicioSesion.java</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/src/java/controlador/Consultas.java</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/web/assets/js/js.js</file>
+            <file>file:/C:/Users/rc0nt/Documents/GitHub/Aguatzi-web/src/java/controlador/ControladorProducto.java</file>
         </group>
     </open-files>
 </project-private>
