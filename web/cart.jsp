@@ -32,7 +32,7 @@
             <div id="sticky-wrapper" class="sticky-wrapper" style="height: 88px;">
                 <nav class="navbar navbar-expand-lg" style="width: 1857px;">                
                     <div class="container">
-                        <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <a class="navbar-brand d-flex align-items-center" href="index.jsp">
                             <img src="assets/img/logo-copia.png" class="navbar-brand-image img-fluid" alt="logo" width="40" height="40">
                             <span class="navbar-brand-text">
                                 Aguatzi

@@ -1,28 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="controlador.ControladorProducto" %>
 <%@page import="modelo.Producto"%>
-<%
-    Producto producto = null; // Inicializa la variable
 
-    // Obten el parámetro "id" de la solicitud
-    String idParameter = request.getParameter("id");
-
-    // Verifica si el parámetro "id" no es nulo y no está vacío
-    if (idParameter != null && !idParameter.isEmpty()) {
-        // Intenta convertir el parámetro "id" a un entero
-        try {
-            int id = Integer.parseInt(idParameter);
-            producto = new ControladorProducto().getProducto(id);
-        } catch (NumberFormatException e) {
-            // Maneja la excepción de formato incorrecto si es necesario
-            e.printStackTrace(); // Puedes cambiar esto según tus necesidades
-        }
-    } else {
-        // Maneja el caso en que el parámetro "id" es nulo o vacío
-        // Puedes redirigir a una página de error o realizar otras acciones según tus necesidades
-        System.out.println("Error: El parámetro 'id' es nulo o vacío");
-    }
-%>
 <%
     ControladorProducto cp=new ControladorProducto();
 %>
@@ -162,7 +141,6 @@
     </footer>
     <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS -->
-    <script src="js/scripts.js"></script>
+
 </body>
 </html>

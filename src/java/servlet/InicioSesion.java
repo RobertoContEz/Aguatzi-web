@@ -41,6 +41,7 @@ public class InicioSesion extends HttpServlet {
         
         if(sql.autenticacion(usuario, clave)==1) {
             HttpSession objSesion = request.getSession(true);
+            objSesion.removeAttribute("carrito");
             objSesion.setAttribute("usuario", usuario);
             response.sendRedirect("productos.jsp");
         } else {
