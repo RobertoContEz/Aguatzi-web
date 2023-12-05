@@ -17,6 +17,10 @@
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
+    <servlet>
+        <servlet-name>GuardarCompras</servlet-name>
+        <servlet-class>servlet.GuardarCompras</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>InicioSesion</servlet-name>
         <url-pattern>/iniciar</url-pattern>
@@ -32,6 +36,10 @@
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>/faces/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuardarCompras</servlet-name>
+        <url-pattern>/guardarCompra</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

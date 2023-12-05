@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import modelo.Articulo;
 import modelo.Compras;
 import modelo.Producto;
+import modelo.Usuario;
 
 /**
  *
@@ -60,6 +61,7 @@ public class Consultas {
         return 0;
 
     }
+    // PARA EL USUARIO -----------------------------------------------------------------------------------------------
 
     public boolean registrarUsuario(String usuario, String correo, String pass) {
         PreparedStatement pst = null;
@@ -128,6 +130,52 @@ public class Consultas {
         return -1;
 
     }
+    
+       public Usuario obtenerUsuario( String nombre) {
+        Usuario usuario = null;
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+        try {
+            String consulta = "select * from usuarios where nombre=?";
+            System.out.println("Consulta es: " + consulta);
+            pst = con.getConexion().prepareStatement(consulta);
+            pst.setString(1, nombre);
+            rs = pst.executeQuery();
+
+            if (rs.next()) {
+                usuario = new Usuario(rs.getInt("id_usuario"), rs.getString("nombre"), rs.getString("pass"), rs.getString("correo"), rs.getString("telefono"), rs.getString("tipo"));
+                String consulta2 = "select calle,colonia,ciudad,estado,pais,codigo_postal,numero_casa from direccion where id_usuario=?";
+                System.out.println("Consulta es: " + consulta);
+                pst = con.getConexion().prepareStatement(consulta2);
+                pst.setInt(1, usuario.getId_usuario());
+                rs = pst.executeQuery();
+
+                if (rs.next()) {
+                    usuario.usuarioDireccion(rs.getString("calle"), rs.getString("colonia"), rs.getString("ciudad"), rs.getString("estado"), rs.getString("pais"), rs.getInt("codigo_postal"), rs.getString("numero_casa"));
+                     }
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error en: " + e);
+        } finally {
+            try {
+                if (con.getConexion() != null) {
+                    con.getConexion().close();
+                }
+                if (pst != null) {
+                    pst.close();
+                }
+                if (rs != null) {
+                    rs.close();
+                }
+            } catch (Exception e) {
+                System.out.println("Error en " + e);
+            }
+        }
+        return usuario;
+    }
+        //  -----------------------------------------------------------------------------------------------
+
 
     // PARA EL CARRITO DE COMPRAS -----------------------------------------------------------------------------------------------
     

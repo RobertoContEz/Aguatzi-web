@@ -41,8 +41,8 @@
         
     </head>
     <body>
-        <main>
-            <!-- Navegacion -->
+       
+        <header class="">
             <nav class="navbar navbar-expand-lg" style="width: 1857px;">                
                 <div class="container">
                     <a class="navbar-brand d-flex align-items-center" href="index.jsp">
@@ -62,69 +62,36 @@
 
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-lg-auto">
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll active" href="index.jsp">Inicio</a>
-                            </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll active" href="index.jsp#section_2">Nosotros</a>
+                                <a class="nav-link" href="index.jsp">Inicio</a>
                             </li>
-
                             <li class="nav-item">
-                                <a class="nav-link click-scroll active" href="productos.jsp">Productos</a>
+                                <a class="nav-link " href="index.jsp#section_2">Nosotros</a>
                             </li>
-
                             <li class="nav-item">
-                                <a class="nav-link click-scroll active" href="cart.jsp">Carrito</a>
+                                <a class="nav-link " href="productos.jsp">Productos</a>
                             </li>
-
+                            <li class="nav-item active">
+                                <a class="nav-link" href="cart.jsp">Carrito</a>
+                            </li>
                             <li class="nav-item">
-                                <a class="nav-link click-scroll active" href="index.jsp#section_3">Contáctanos</a>
+                                <a class="nav-link" href="comprasUsuario.jsp"">Mis compras</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.jsp#section_3">Contáctanos</a>
+                            </li>
+                            <li  class="nav-item">
+                                <a class="nav-link"  href="cerrarSesion" role="button" >Cerrar Sesión</a>
                             </li>
                         </ul>
 
-                        <div class="d-none d-lg-block ms-lg-3">
-                            <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Iniciar Sesión</a>
-                        </div>
+
                     </div>
                 </div>
             </nav>
-            <!-- Division Inicio Sesion -->
-            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">                
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Iniciar Sesión</h5>
-
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-
-                <div class="offcanvas-body d-flex flex-column">
-                    <form class="custom-form member-login-form" action="iniciar" method="post" role="form">
-
-                        <div class="member-login-form-body">
-                            <div class="mb-4">
-                                <label class="form-label mb-2" for="usuario">Nombre de usuario.</label>
-
-                                <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Nombre" required>
-                            </div>
-
-                            <div class="mb-4">
-                                <label class="form-label mb-2" for="pass">Contraseña</label>
-
-                                <input type="password" name="pass" id="pass" pattern="[0-9a-zA-Z]{4,10}" class="form-control" placeholder="Contraseña" required="">
-                            </div>
-
-                            <div class="col-lg-5 col-md-7 col-8 mx-auto">
-                                <button type="submit" class="form-control">Entrar</button>
-                            </div>
-
-                            <div class="text-center my-4">
-                                <a href="registrar.jsp">Haga click para registrase</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-            </div>
+              </header>
+        <main>
             
             <!-- Section Garrafones-->
             <section class="hero-section hero-50 d-flex justify-content-center align-items-center" id="section_1">

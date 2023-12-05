@@ -61,12 +61,12 @@ public class GuardarCompras extends HttpServlet {
             if (!mensajesError.isEmpty()) {
                 request.getSession().setAttribute("mensaje", "No se pudo realizar la compra");
                 request.getSession().removeAttribute("carrito");
-                response.sendRedirect("index2.jsp");
+                response.sendRedirect("index.jsp");
             } else {
                 // Si no hubo errores, establece el mensaje de éxito y realiza la redirección
                 request.getSession().setAttribute("mensaje", "Compra registrada correctamente");
                 request.getSession().removeAttribute("carrito");
-                response.sendRedirect("index2.jsp");
+                response.sendRedirect("index.jsp");
             }
         }
             
