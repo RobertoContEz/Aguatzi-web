@@ -98,7 +98,7 @@
                                 <a class="nav-link" href="cart.jsp">Carrito</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="comprasUsuario.jsp"">Mis compras</a>
+                                <a class="nav-link" href="comprasUsuario.jsp">Mis compras</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="index.jsp#section_3">Contáctanos</a>
